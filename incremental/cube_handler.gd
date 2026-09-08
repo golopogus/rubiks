@@ -1,11 +1,11 @@
 extends Node
 
-var red = face.new(0,4,5,3,2,1,'r')
-var orange = face.new(1,4,5,2,3,0,'o')
-var blue = face.new(2,4,5,0,1,3,'b')
-var green = face.new(3,4,5,1,0,2,'g')
-var yellow = face.new(4,1,0,3,2,5,'y')
-var white = face.new(5,0,1,3,2,4,'w')
+var red = face1.new(0,4,5,3,2,1,'r')
+var orange = face1.new(1,4,5,2,3,0,'o')
+var blue = face1.new(2,4,5,0,1,3,'b')
+var green = face1.new(3,4,5,1,0,2,'g')
+var yellow = face1.new(4,1,0,3,2,5,'y')
+var white = face1.new(5,0,1,3,2,4,'w')
 var cube = [red.stickers,orange.stickers,blue.stickers,green.stickers,yellow.stickers,white.stickers]
 
 #f = red = 0
@@ -15,7 +15,8 @@ var cube = [red.stickers,orange.stickers,blue.stickers,green.stickers,yellow.sti
 #u = yellow = 4
 #d = white = 5
 func _ready() -> void:
-
+	f_turn()
+	r_turn()
 	print(cube)
 
 func f_turn():

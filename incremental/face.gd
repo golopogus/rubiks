@@ -1,5 +1,5 @@
 
-class_name face
+class_name face1
 extends RefCounted
 
 var face_num: int
